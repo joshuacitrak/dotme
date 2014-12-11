@@ -1,0 +1,40 @@
+//=============================
+//===========COLORS===========
+//============================
+$white:#fafbfb;//bg
+$lt-green:#96dcb3;
+$md-green:#6aa986;//primary
+$dk-green:#6a8763;
+$grey:#837d7d;
+$red:#a95751; //link
+
+//===========================
+//=============FONTS========
+//==========================
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Loved by the King', cursive;
+
+//===========================
+//======TRANSITIONS=========
+//=========================
+$transition-time: .7s;
+
+//===========================
+//===========SCREENS========
+//==========================
+$small :32em;//512px
+$medium:47em;//752px
+$large:64em;//1024px
+
+$medium-layout:(12 1/4 static);
+$large-layout:(6 1/3 static);
+///SUSY-----------------0-------------0------------0-----
+
+$susy:
+(
+  total-columns:12,
+  column-width:4em,
+  gutter-width:1em,
+  breakpoint-to-ems:true,
+);
+

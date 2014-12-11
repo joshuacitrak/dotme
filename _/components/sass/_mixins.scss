@@ -1,0 +1,12 @@
+@mixin content-box($bg-color:$yellow, $border-color:$white, $alpha:1)
+{
+  @include background($bg-color);
+  border:1px solid $border-color;
+  opacity:$alpha;
+  height:100%;
+}
+
+@mixin animate()
+{
+  @include single-transition(all, $transition-time, ease-out);
+}

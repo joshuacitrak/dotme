@@ -1,0 +1,77 @@
+@include border-box-sizing;
+
+.content
+{
+  margin-top:$default-white-space;
+  @include background($md-green);
+  @include container(80%);
+  @include clearfix;
+  
+  @include susy-breakpoint($medium, $medium-layout)
+  {
+    @include container(70%);
+  }
+  
+  @include susy-breakpoint($large, $large-layout)
+  {
+    @include container(53.444em);
+  }
+}
+
+header
+{
+  @include background($white);
+  @include span(12 of 12);
+  @include clearfix;
+  .hero
+  {
+    font-family:$secondary-font;
+    font-size:$md-font-size;
+    display:inline-block;
+  }
+  
+  .subhead
+  {
+    font-size:$sm-font-size;
+    display:inline-block;
+  }
+}
+
+.bio-wrapper
+{
+  @include span(12 of 12);
+  @include clearfix;
+  color:$white;
+  
+  @include susy-breakpoint($medium, $medium-layout)
+    {
+      @include span(12 of 12);
+    }
+  
+  .bio-pic
+  {
+    @include span(5 of 12);
+    @include background(image-url("me_sm.jpg") no-repeat);
+    @include border-radius(50%);
+    width:145px;
+    height:145px;
+    
+    @include susy-breakpoint($large, $large-layout)
+    {
+      @include background(image-url("me_lg.jpg") no-repeat);
+      width:265px;
+      height:265px;
+    }
+  }
+  .bio-content
+  {
+    @include span(6 of 12 last)
+  }
+}
+
+.nav-wrapper
+{
+  @include span(12 of 12 last);
+}
+
+

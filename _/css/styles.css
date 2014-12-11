@@ -1,0 +1,302 @@
+@import url(http://fonts.googleapis.com/css?family=Loved+by+the+King|Open+Sans:400,300);
+/* line 5, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 21, ../components/sass/_base.scss */
+html, body {
+  background: #fafbfb;
+  font-family: "Open Sans", sans-serif;
+  color: #6aa986;
+  font-size: 18px;
+  line-height: 1; }
+
+/* line 30, ../components/sass/_base.scss */
+body {
+  overflow: hidden; }
+
+/* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 3, ../components/sass/_layout.scss */
+.content {
+  margin-top: 3.1em;
+  background: #6aa986;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  .content:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 47em) {
+    /* line 3, ../components/sass/_layout.scss */
+    .content {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto; }
+      /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+      .content:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+  @media (min-width: 64em) {
+    /* line 3, ../components/sass/_layout.scss */
+    .content {
+      width: 53.444em;
+      margin-left: auto;
+      margin-right: auto; }
+      /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+      .content:after {
+        content: " ";
+        display: block;
+        clear: both; } }
+
+/* line 21, ../components/sass/_layout.scss */
+header {
+  background: #fafbfb;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 26, ../components/sass/_layout.scss */
+  header .hero {
+    font-family: "Loved by the King", cursive;
+    font-size: 2.618em;
+    display: inline-block; }
+  /* line 33, ../components/sass/_layout.scss */
+  header .subhead {
+    font-size: 0.618em;
+    display: inline-block; }
+
+/* line 40, ../components/sass/_layout.scss */
+.bio-wrapper {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  *zoom: 1;
+  color: #fafbfb; }
+  @media (min-width: 47em) {
+    /* line 40, ../components/sass/_layout.scss */
+    .bio-wrapper {
+      width: 59em;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+  /* line 51, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-pic {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%;
+    background: url('../../images/me_sm.jpg?1418235156') no-repeat;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 145px;
+    height: 145px; }
+    @media (min-width: 64em) {
+      /* line 51, ../components/sass/_layout.scss */
+      .bio-wrapper .bio-pic {
+        background: url('../../images/me_lg.jpg?1418235099') no-repeat;
+        width: 265px;
+        height: 265px; } }
+  /* line 66, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0; }
+
+/* line 72, ../components/sass/_layout.scss */
+.nav-wrapper {
+  width: 100%;
+  float: right;
+  margin-right: 0; }
+
+/* line 1, ../components/sass/_components.scss */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+/* line 11, ../components/sass/_components.scss */
+.button-wrapper {
+  position: relative;
+  background: #96dcb3;
+  float: left;
+  overflow: hidden;
+  *zoom: 1;
+  width: 14.285%;
+  height: 65px;
+  border-right: 1px solid #6a8763;
+  border-left: 1px solid #84a07d;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  cursor: pointer; }
+  /* line 24, ../components/sass/_components.scss */
+  .button-wrapper:hover {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background: #6a8763; }
+  /* line 30, ../components/sass/_components.scss */
+  .button-wrapper:hover > .email {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -100px -34px; }
+  /* line 36, ../components/sass/_components.scss */
+  .button-wrapper:hover > .coop {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: 0px -34px; }
+  /* line 42, ../components/sass/_components.scss */
+  .button-wrapper:hover > .pmr {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -50px -34px; }
+  /* line 48, ../components/sass/_components.scss */
+  .button-wrapper:hover > .slouch {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -300px -34px; }
+  /* line 54, ../components/sass/_components.scss */
+  .button-wrapper:hover > .twitter {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -250px -34px; }
+  /* line 60, ../components/sass/_components.scss */
+  .button-wrapper:hover > .facebook {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -150px -34px; }
+  /* line 66, ../components/sass/_components.scss */
+  .button-wrapper:hover > .google {
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    background-position: -200px -34px; }
+  /* line 72, ../components/sass/_components.scss */
+  .button-wrapper:first-child {
+    border-left: none; }
+  /* line 77, ../components/sass/_components.scss */
+  .button-wrapper .button {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    margin-left: -16px; }
+  /* line 89, ../components/sass/_components.scss */
+  .button-wrapper .email {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -100px 0px;
+    -moz-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out; }
+  /* line 95, ../components/sass/_components.scss */
+  .button-wrapper .coop {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat 0px 0px; }
+  /* line 100, ../components/sass/_components.scss */
+  .button-wrapper .pmr {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -50px 0px; }
+  /* line 105, ../components/sass/_components.scss */
+  .button-wrapper .slouch {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -300px 0px; }
+  /* line 110, ../components/sass/_components.scss */
+  .button-wrapper .twitter {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -250px 0px; }
+  /* line 115, ../components/sass/_components.scss */
+  .button-wrapper .facebook {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -150px 0px; }
+  /* line 120, ../components/sass/_components.scss */
+  .button-wrapper .google {
+    background: url('../../images/icon-sprite.png?1418234922') no-repeat -200px 0px; }
+
+/* line 128, ../components/sass/_components.scss */
+.soc-wrapper:first-child {
+  border-left: 1px solid #84a07d; }
+/* line 132, ../components/sass/_components.scss */
+.soc-wrapper:last-child {
+  border-right: none; }
