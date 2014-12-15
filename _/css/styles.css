@@ -165,8 +165,8 @@ header {
   /* line 66, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content {
     width: 49.15254%;
-    float: right;
-    margin-right: 0; }
+    float: left;
+    margin-right: 1.69492%; }
 
 /* line 72, ../components/sass/_layout.scss */
 .nav-wrapper {
