@@ -23,17 +23,29 @@ header
   @include background($white);
   @include span(12 of 12);
   @include clearfix;
+  
+  .hero, .subhead
+  {
+    display:inline-block;
+    margin-bottom:-7px;
+  }
+  
   .hero
   {
     font-family:$secondary-font;
     font-size:$md-font-size;
-    display:inline-block;
   }
   
   .subhead
   {
     font-size:$sm-font-size;
-    display:inline-block;
+    float:right;
+    padding-top:27px;
+    @include susy-breakpoint($medium, $medium-layout)
+    {
+      float:none;
+      padding-top:0;
+    }
   }
 }
 
@@ -42,30 +54,60 @@ header
   @include span(12 of 12);
   @include clearfix;
   color:$white;
-  
-  @include susy-breakpoint($medium, $medium-layout)
-    {
-      @include span(12 of 12);
-    }
-  
+
   .bio-pic
   {
-    @include span(5 of 12);
     @include background(image-url("me_sm.jpg") no-repeat);
     @include border-radius(50%);
     width:145px;
     height:145px;
+    margin:$default-margin auto;
     
     @include susy-breakpoint($large, $large-layout)
     {
+      @include span(5 of 12);
       @include background(image-url("me_lg.jpg") no-repeat);
       width:265px;
       height:265px;
+      margin:$default-margin*2 0 0 $default-margin*2;
     }
   }
   .bio-content
   {
-    @include span(6 of 12)
+    h2,p
+    {
+      display:inline-block;
+      padding:$default-padding;
+    }//h2/p
+    
+    h2
+    {
+      font-size:29px;
+    }//h2
+    
+    p
+    {
+      font-size:18px;
+      line-height:31px;
+    }//p
+    
+    .bio
+    {
+      padding:$default-padding $default-padding 0 $default-padding;
+    }
+    
+    .bio-footer
+    {
+      color:$lt-green;
+      font-size:13px;
+      text-align:center;
+      line-height:15px;
+    }
+    
+    @include susy-breakpoint($large, $medium-layout)
+    {
+      @include span(6 of 12 last);
+    }
   }
 }
 

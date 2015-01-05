@@ -119,17 +119,26 @@ header {
   margin-right: 0;
   overflow: hidden;
   *zoom: 1; }
-  /* line 26, ../components/sass/_layout.scss */
+  /* line 27, ../components/sass/_layout.scss */
+  header .hero, header .subhead {
+    display: inline-block;
+    margin-bottom: -7px; }
+  /* line 33, ../components/sass/_layout.scss */
   header .hero {
     font-family: "Loved by the King", cursive;
-    font-size: 2.618em;
-    display: inline-block; }
-  /* line 33, ../components/sass/_layout.scss */
+    font-size: 2.618em; }
+  /* line 39, ../components/sass/_layout.scss */
   header .subhead {
     font-size: 0.618em;
-    display: inline-block; }
+    float: right;
+    padding-top: 27px; }
+    @media (min-width: 47em) {
+      /* line 39, ../components/sass/_layout.scss */
+      header .subhead {
+        float: none;
+        padding-top: 0; } }
 
-/* line 40, ../components/sass/_layout.scss */
+/* line 52, ../components/sass/_layout.scss */
 .bio-wrapper {
   width: 100%;
   float: left;
@@ -138,37 +147,53 @@ header {
   overflow: hidden;
   *zoom: 1;
   color: #fafbfb; }
-  @media (min-width: 47em) {
-    /* line 40, ../components/sass/_layout.scss */
-    .bio-wrapper {
-      width: 59em;
-      float: left;
-      margin-left: 0;
-      margin-right: 0; } }
-  /* line 51, ../components/sass/_layout.scss */
+  /* line 58, ../components/sass/_layout.scss */
   .bio-wrapper .bio-pic {
-    width: 40.67797%;
-    float: left;
-    margin-right: 1.69492%;
     background: url('../../images/me_sm.jpg?1418235156') no-repeat;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     width: 145px;
-    height: 145px; }
+    height: 145px;
+    margin: 12px auto; }
     @media (min-width: 64em) {
-      /* line 51, ../components/sass/_layout.scss */
+      /* line 58, ../components/sass/_layout.scss */
       .bio-wrapper .bio-pic {
+        width: 25.33333em;
+        float: left;
+        margin-right: 1.33333em;
         background: url('../../images/me_lg.jpg?1418235099') no-repeat;
         width: 265px;
-        height: 265px; } }
-  /* line 66, ../components/sass/_layout.scss */
-  .bio-wrapper .bio-content {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%; }
+        height: 265px;
+        margin: 24px 0 0 24px; } }
+  /* line 77, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content h2, .bio-wrapper .bio-content p {
+    display: inline-block;
+    padding: 18px; }
+  /* line 83, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content h2 {
+    font-size: 29px; }
+  /* line 88, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content p {
+    font-size: 18px;
+    line-height: 31px; }
+  /* line 94, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content .bio {
+    padding: 18px 18px 0 18px; }
+  /* line 99, ../components/sass/_layout.scss */
+  .bio-wrapper .bio-content .bio-footer {
+    color: #96dcb3;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px; }
+  @media (min-width: 64em) {
+    /* line 75, ../components/sass/_layout.scss */
+    .bio-wrapper .bio-content {
+      width: 29em;
+      float: right;
+      margin-right: 0; } }
 
-/* line 72, ../components/sass/_layout.scss */
+/* line 114, ../components/sass/_layout.scss */
 .nav-wrapper {
   width: 100%;
   float: right;
@@ -191,74 +216,78 @@ header {
   overflow: hidden;
   *zoom: 1;
   width: 14.285%;
-  height: 65px;
+  height: 45px;
   border-right: 1px solid #6a8763;
   border-left: 1px solid #84a07d;
-  -moz-transition: all 0.7s ease-out;
-  -o-transition: all 0.7s ease-out;
-  -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   cursor: pointer; }
-  /* line 24, ../components/sass/_components.scss */
+  @media (min-width: 64em) {
+    /* line 11, ../components/sass/_components.scss */
+    .button-wrapper {
+      height: 65px; } }
+  /* line 29, ../components/sass/_components.scss */
   .button-wrapper:hover {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background: #6a8763; }
-  /* line 30, ../components/sass/_components.scss */
+  /* line 35, ../components/sass/_components.scss */
   .button-wrapper:hover > .email {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -100px -34px; }
-  /* line 36, ../components/sass/_components.scss */
+  /* line 41, ../components/sass/_components.scss */
   .button-wrapper:hover > .coop {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: 0px -34px; }
-  /* line 42, ../components/sass/_components.scss */
+  /* line 47, ../components/sass/_components.scss */
   .button-wrapper:hover > .pmr {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -50px -34px; }
-  /* line 48, ../components/sass/_components.scss */
+  /* line 53, ../components/sass/_components.scss */
   .button-wrapper:hover > .slouch {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -300px -34px; }
-  /* line 54, ../components/sass/_components.scss */
+  /* line 59, ../components/sass/_components.scss */
   .button-wrapper:hover > .twitter {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -250px -34px; }
-  /* line 60, ../components/sass/_components.scss */
+  /* line 65, ../components/sass/_components.scss */
   .button-wrapper:hover > .facebook {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -150px -34px; }
-  /* line 66, ../components/sass/_components.scss */
+  /* line 71, ../components/sass/_components.scss */
   .button-wrapper:hover > .google {
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
     background-position: -200px -34px; }
-  /* line 72, ../components/sass/_components.scss */
+  /* line 77, ../components/sass/_components.scss */
   .button-wrapper:first-child {
     border-left: none; }
-  /* line 77, ../components/sass/_components.scss */
+  /* line 82, ../components/sass/_components.scss */
   .button-wrapper .button {
     display: inline-block;
     position: absolute;
@@ -268,35 +297,35 @@ header {
     height: 32px;
     margin-top: -16px;
     margin-left: -16px; }
-  /* line 89, ../components/sass/_components.scss */
+  /* line 94, ../components/sass/_components.scss */
   .button-wrapper .email {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -100px 0px;
-    -moz-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    -webkit-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out; }
-  /* line 95, ../components/sass/_components.scss */
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+  /* line 100, ../components/sass/_components.scss */
   .button-wrapper .coop {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat 0px 0px; }
-  /* line 100, ../components/sass/_components.scss */
+  /* line 105, ../components/sass/_components.scss */
   .button-wrapper .pmr {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -50px 0px; }
-  /* line 105, ../components/sass/_components.scss */
+  /* line 110, ../components/sass/_components.scss */
   .button-wrapper .slouch {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -300px 0px; }
-  /* line 110, ../components/sass/_components.scss */
+  /* line 115, ../components/sass/_components.scss */
   .button-wrapper .twitter {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -250px 0px; }
-  /* line 115, ../components/sass/_components.scss */
+  /* line 120, ../components/sass/_components.scss */
   .button-wrapper .facebook {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -150px 0px; }
-  /* line 120, ../components/sass/_components.scss */
+  /* line 125, ../components/sass/_components.scss */
   .button-wrapper .google {
     background: url('../../images/icon-sprite.png?1418234922') no-repeat -200px 0px; }
 
-/* line 128, ../components/sass/_components.scss */
+/* line 133, ../components/sass/_components.scss */
 .soc-wrapper:first-child {
   border-left: 1px solid #84a07d; }
-/* line 132, ../components/sass/_components.scss */
+/* line 137, ../components/sass/_components.scss */
 .soc-wrapper:last-child {
   border-right: none; }
