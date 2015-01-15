@@ -29,5 +29,31 @@ html, body
 
 body
 {
-  overflow:hidden;
+  overflow:auto;
 }
+
+a
+{
+  color:$dk-green;
+  &:hover
+  {
+    color:$lt-green;
+  }
+  &:visited
+  {
+    color:$lt-green;
+  }
+}
+
+.four-oh-four-content
+{
+  width:1170px;
+  margin:50px auto;
+  .four-oh-four
+  {
+    font-size:$xlg-font-size;
+    color:$red;
+
+  }
+}
+

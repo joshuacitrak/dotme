@@ -65,7 +65,26 @@ html, body {
 
 /* line 30, ../components/sass/_base.scss */
 body {
-  overflow: hidden; }
+  overflow: auto; }
+
+/* line 35, ../components/sass/_base.scss */
+a {
+  color: #6a8763; }
+  /* line 38, ../components/sass/_base.scss */
+  a:hover {
+    color: #96dcb3; }
+  /* line 42, ../components/sass/_base.scss */
+  a:visited {
+    color: #96dcb3; }
+
+/* line 48, ../components/sass/_base.scss */
+.four-oh-four-content {
+  width: 1170px;
+  margin: 50px auto; }
+  /* line 52, ../components/sass/_base.scss */
+  .four-oh-four-content .four-oh-four {
+    font-size: 6.854em;
+    color: #a95751; }
 
 /* line 11, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
@@ -74,43 +93,46 @@ body {
   box-sizing: border-box; }
 
 /* line 3, ../components/sass/_layout.scss */
-.content {
-  margin-top: 3.1em;
-  background: #6aa986;
+.content, .footer-content {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   *zoom: 1; }
   /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-  .content:after {
+  .content:after, .footer-content:after {
     content: " ";
     display: block;
     clear: both; }
   @media (min-width: 47em) {
     /* line 3, ../components/sass/_layout.scss */
-    .content {
+    .content, .footer-content {
       width: 70%;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-      .content:after {
+      .content:after, .footer-content:after {
         content: " ";
         display: block;
         clear: both; } }
   @media (min-width: 64em) {
     /* line 3, ../components/sass/_layout.scss */
-    .content {
+    .content, .footer-content {
       width: 53.444em;
       margin-left: auto;
       margin-right: auto; }
       /* line 12, ../../../../../../Users/jrcitrak/.rvm/gems/ruby-2.1.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-      .content:after {
+      .content:after, .footer-content:after {
         content: " ";
         display: block;
         clear: both; } }
 
-/* line 21, ../components/sass/_layout.scss */
+/* line 19, ../components/sass/_layout.scss */
+.content {
+  margin-top: 3.1em;
+  background: #6aa986; }
+
+/* line 25, ../components/sass/_layout.scss */
 header {
   background: #fafbfb;
   width: 100%;
@@ -119,26 +141,26 @@ header {
   margin-right: 0;
   overflow: hidden;
   *zoom: 1; }
-  /* line 27, ../components/sass/_layout.scss */
+  /* line 31, ../components/sass/_layout.scss */
   header .hero, header .subhead {
     display: inline-block;
     margin-bottom: -7px; }
-  /* line 33, ../components/sass/_layout.scss */
+  /* line 37, ../components/sass/_layout.scss */
   header .hero {
     font-family: "Loved by the King", cursive;
     font-size: 2.618em; }
-  /* line 39, ../components/sass/_layout.scss */
+  /* line 43, ../components/sass/_layout.scss */
   header .subhead {
     font-size: 0.618em;
     float: right;
     padding-top: 27px; }
     @media (min-width: 47em) {
-      /* line 39, ../components/sass/_layout.scss */
+      /* line 43, ../components/sass/_layout.scss */
       header .subhead {
         float: none;
         padding-top: 0; } }
 
-/* line 52, ../components/sass/_layout.scss */
+/* line 56, ../components/sass/_layout.scss */
 .bio-wrapper {
   width: 100%;
   float: left;
@@ -147,7 +169,7 @@ header {
   overflow: hidden;
   *zoom: 1;
   color: #fafbfb; }
-  /* line 58, ../components/sass/_layout.scss */
+  /* line 62, ../components/sass/_layout.scss */
   .bio-wrapper .bio-pic {
     background: url('../../images/me_sm.jpg?1418235156') no-repeat;
     -moz-border-radius: 50%;
@@ -157,7 +179,7 @@ header {
     height: 145px;
     margin: 12px auto; }
     @media (min-width: 64em) {
-      /* line 58, ../components/sass/_layout.scss */
+      /* line 62, ../components/sass/_layout.scss */
       .bio-wrapper .bio-pic {
         width: 25.33333em;
         float: left;
@@ -166,38 +188,62 @@ header {
         width: 265px;
         height: 265px;
         margin: 24px 0 0 24px; } }
-  /* line 77, ../components/sass/_layout.scss */
+  /* line 81, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content h2, .bio-wrapper .bio-content p {
     display: inline-block;
     padding: 18px; }
-  /* line 83, ../components/sass/_layout.scss */
+  /* line 87, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content h2 {
     font-size: 29px; }
-  /* line 88, ../components/sass/_layout.scss */
+  /* line 92, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content p {
     font-size: 18px;
     line-height: 31px; }
-  /* line 94, ../components/sass/_layout.scss */
+  /* line 98, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content .bio {
     padding: 18px 18px 0 18px; }
-  /* line 99, ../components/sass/_layout.scss */
+  /* line 103, ../components/sass/_layout.scss */
   .bio-wrapper .bio-content .bio-footer {
     color: #96dcb3;
     font-size: 13px;
-    text-align: center;
     line-height: 15px; }
   @media (min-width: 64em) {
-    /* line 75, ../components/sass/_layout.scss */
+    /* line 79, ../components/sass/_layout.scss */
     .bio-wrapper .bio-content {
       width: 29em;
       float: right;
       margin-right: 0; } }
 
-/* line 114, ../components/sass/_layout.scss */
+/* line 117, ../components/sass/_layout.scss */
 .nav-wrapper {
   width: 100%;
   float: right;
   margin-right: 0; }
+
+/* line 122, ../components/sass/_layout.scss */
+footer {
+  overflow: hidden;
+  *zoom: 1;
+  display: table;
+  /* Allow the centering to work */
+  margin: 12px auto; }
+  /* line 136, ../components/sass/_layout.scss */
+  footer ul li {
+    float: left;
+    padding-right: 18px; }
+    /* line 140, ../components/sass/_layout.scss */
+    footer ul li:last-child {
+      padding-right: 0px; }
+    /* line 144, ../components/sass/_layout.scss */
+    footer ul li a {
+      color: #96dcb3; }
+      /* line 148, ../components/sass/_layout.scss */
+      footer ul li a:hover {
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        color: #6aa986; }
 
 /* line 1, ../components/sass/_components.scss */
 .sr-only {

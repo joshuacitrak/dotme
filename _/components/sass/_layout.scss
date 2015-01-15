@@ -1,9 +1,7 @@
 @include border-box-sizing;
 
-.content
+.content, .footer-content
 {
-  margin-top:$default-white-space;
-  @include background($md-green);
   @include container(80%);
   @include clearfix;
   
@@ -16,6 +14,12 @@
   {
     @include container(53.444em);
   }
+}
+
+.content
+{
+  margin-top:$default-white-space;
+  @include background($md-green);
 }
 
 header
@@ -100,7 +104,6 @@ header
     {
       color:$lt-green;
       font-size:13px;
-      text-align:center;
       line-height:15px;
     }
     
@@ -115,5 +118,41 @@ header
 {
   @include span(12 of 12 last);
 }
+
+footer
+{
+  @include clearfix;
+  display: table;   /* Allow the centering to work */
+  margin: $default-margin auto;
+  ul
+  {
+    //float:left;
+    //margin-left:$default-margin;
+    
+    //@include susy-breakpoint($large, $large-layout)
+     // {
+      //  margin-left:$default-margin*2;
+      //}
+    li
+    {
+      float:left;
+      padding-right:$default-padding;
+      &:last-child
+      {
+        padding-right:0px;
+      }
+      a
+      {
+          color:$lt-green;
+          
+          &:hover
+          {
+            @include single-transition(all, $transition-time, ease-out);
+            color:$md-green;
+          }
+      }//a
+    }//li
+  }//ul
+}//footer
 
 
